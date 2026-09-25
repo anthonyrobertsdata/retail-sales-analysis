@@ -24,3 +24,19 @@ FROM retail_sales
 GROUP BY country
 ORDER BY revenue DESC
 LIMIT 10;
+
+-- Product performance: top products by positive-sales revenue.
+
+SELECT
+    stock_code,
+    description,
+    ROUND(SUM(line_revenue), 2) AS revenue,
+    SUM(quantity) AS units_sold,
+    COUNT(DISTINCT invoice_no) AS invoices
+FROM retail_sales
+WHERE description IS NOT NULL
+GROUP BY
+    stock_code,
+    description
+ORDER BY revenue DESC
+LIMIT 10;

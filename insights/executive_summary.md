@@ -38,6 +38,12 @@ Positive-sales revenue totaled 10,666,684.54 across 19,960 invoices, 4,338 ident
 
    The United Kingdom generated 9,025,222.08 in revenue—approximately 84.6% of total positive sales revenue—and accounted for 18,019 of 19,960 invoices. The Netherlands and EIRE were the next-largest markets, each generating roughly 285,000 in revenue.
 
+6\. Revenue leaders and unit-volume leaders are different.
+
+
+
+   REGENCY CAKESTAND 3 TIER was the top merchandise product by revenue, generating 174,484.74 across 1,988 invoices. PAPER CRAFT, LITTLE BIRDIE had the highest unit volume at 80,995 units, but all units appeared on one invoice, indicating a bulk purchase rather than broad order-level demand.
+
 ## 
 
 ## Recommended Next Analyses
