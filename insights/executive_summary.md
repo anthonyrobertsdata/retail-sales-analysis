@@ -1,14 +1,20 @@
 # Executive Summary
 
+## 
+
 ## Objective
 
 Analyze transactional retail sales data to establish a reliable sales dataset and identify initial revenue trends.
+
+## 
 
 ## Dataset Scope
 
 The analysis includes 530,100 cleaned sales lines from December 1, 2010 through December 9, 2011. The raw source contained 541,909 records.
 
 Positive-sales revenue totaled 10,666,684.54 across 19,960 invoices, 4,338 identified customers, and 3,921 products.
+
+## 
 
 ## Key Findings
 
@@ -28,10 +34,17 @@ Positive-sales revenue totaled 10,666,684.54 across 19,960 invoices, 4,338 ident
 
    A total of 132,220 sales lines have a missing customer ID. Customer-level analyses should use only records with a non-null customer ID, while product, country, and time analyses can use the full cleaned sales view.
 
+5\. Revenue is highly concentrated in the United Kingdom.
+
+   The United Kingdom generated 9,025,222.08 in revenue—approximately 84.6% of total positive sales revenue—and accounted for 18,019 of 19,960 invoices. The Netherlands and EIRE were the next-largest markets, each generating roughly 285,000 in revenue.
+
+## 
+
 ## Recommended Next Analyses
 
-- Rank countries by revenue, invoices, and identified customers.
-- Identify best-selling products by revenue and quantity.
-- Analyze top customers using only non-null customer IDs.
-- Create RFM customer segments.
-- Export final analysis results to Excel or Power BI for visualization.
+* Rank countries by revenue, invoices, and identified customers.
+* Identify best-selling products by revenue and quantity.
+* Analyze top customers using only non-null customer IDs.
+* Create RFM customer segments.
+* Export final analysis results to Excel or Power BI for visualization.
+
