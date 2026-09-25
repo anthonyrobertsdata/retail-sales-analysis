@@ -25,7 +25,8 @@ GROUP BY country
 ORDER BY revenue DESC
 LIMIT 10;
 
--- Product performance: top products by positive-sales revenue.
+-- Product performance: top merchandise products by positive-sales revenue.
+-- Excludes postage, manual adjustments, and discount-type transaction codes.
 
 SELECT
     stock_code,
@@ -35,8 +36,30 @@ SELECT
     COUNT(DISTINCT invoice_no) AS invoices
 FROM retail_sales
 WHERE description IS NOT NULL
+  AND stock_code NOT IN ('DOT', 'POST', 'M', 'D', 'BANK CHARGES', 'C2')
 GROUP BY
     stock_code,
     description
+ORDER BY revenue DESC
+LIMIT 10;
+
+-- Customer performance: top identified customers by positive-sales revenue.
+-- Excludes records without a customer ID.
+
+SELECT
+    customer_id,
+    country,
+    ROUND(SUM(line_revenue), 2) AS revenue,
+    COUNT(DISTINCT invoice_no) AS invoices,
+    ROUND(
+        SUM(line_revenue) / COUNT(DISTINCT invoice_no),
+        2
+    ) AS average_order_value,
+    MAX(invoice_date)::date AS most_recent_purchase
+FROM retail_sales
+WHERE customer_id IS NOT NULL
+GROUP BY
+    customer_id,
+    country
 ORDER BY revenue DESC
 LIMIT 10;
