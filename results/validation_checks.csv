@@ -1,0 +1,54 @@
+record,check,passed
+2010-12-01,invoice_average,True
+2011-01-01,invoice_average,True
+2011-01-01,previous_revenue,True
+2011-01-01,change,True
+2011-01-01,growth,True
+2011-02-01,invoice_average,True
+2011-02-01,previous_revenue,True
+2011-02-01,change,True
+2011-02-01,growth,True
+2011-03-01,invoice_average,True
+2011-03-01,previous_revenue,True
+2011-03-01,change,True
+2011-03-01,growth,True
+2011-04-01,invoice_average,True
+2011-04-01,previous_revenue,True
+2011-04-01,change,True
+2011-04-01,growth,True
+2011-05-01,invoice_average,True
+2011-05-01,previous_revenue,True
+2011-05-01,change,True
+2011-05-01,growth,True
+2011-06-01,invoice_average,True
+2011-06-01,previous_revenue,True
+2011-06-01,change,True
+2011-06-01,growth,True
+2011-07-01,invoice_average,True
+2011-07-01,previous_revenue,True
+2011-07-01,change,True
+2011-07-01,growth,True
+2011-08-01,invoice_average,True
+2011-08-01,previous_revenue,True
+2011-08-01,change,True
+2011-08-01,growth,True
+2011-09-01,invoice_average,True
+2011-09-01,previous_revenue,True
+2011-09-01,change,True
+2011-09-01,growth,True
+2011-10-01,invoice_average,True
+2011-10-01,previous_revenue,True
+2011-10-01,change,True
+2011-10-01,growth,True
+2011-11-01,invoice_average,True
+2011-11-01,previous_revenue,True
+2011-11-01,change,True
+2011-11-01,growth,True
+One-invoice customers,customer_percentage,True
+One-invoice customers,revenue_percentage,True
+One-invoice customers,invoices_per_customer,True
+One-invoice customers,sales_per_customer,True
+Repeat customers (2+ invoices),customer_percentage,True
+Repeat customers (2+ invoices),revenue_percentage,True
+Repeat customers (2+ invoices),invoices_per_customer,True
+Repeat customers (2+ invoices),sales_per_customer,True
